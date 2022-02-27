@@ -27,7 +27,7 @@
                         <a class="menu" href="/logout">로그아웃</a>
                     </c:otherwise>
                 </c:choose>
-                <a class="menu" href="">마이페이지</a>
+                <a class="menu" href="/?center=myPage">마이페이지</a>
             </div>
         </div>
     </div>

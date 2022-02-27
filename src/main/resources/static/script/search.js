@@ -28,9 +28,11 @@ $(document).ready(function getBooksData(){
             let thumbnail = e.thumbnail;
             // console.log(thumbnail);
             if(thumbnail == "") thumbnail = "/media/noImage.png";
+            const book = e.isbn;
             const str = `
                     <div class="result">
-                        <img class="thumbnail" src="${thumbnail}" alt="">
+<!--                        <img class="thumbnail" src="${thumbnail}" alt="" onclick="location.href='/center=review&book={book}'">-->
+                        <input type="image" class="thumbnail" src="${thumbnail}" onclick="location.href='/?center=review&book=${book}'">
                         <div class="txt"><span class="title">${e.title}</span></div>
                         <div class="txt"><span class="authors">저자: ${e.authors}</span></div>
                         <div class="txt"><span class="publisher">출판사: ${e.publisher}</span></div>

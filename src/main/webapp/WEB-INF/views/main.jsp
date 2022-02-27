@@ -31,7 +31,6 @@
                 <jsp:include page="/center"></jsp:include>
             </c:when>
             <c:otherwise>
-<%--                <c:out value="/${center}"></c:out>--%>
                 <jsp:include page="/${center}"></jsp:include>
             </c:otherwise>
         </c:choose>

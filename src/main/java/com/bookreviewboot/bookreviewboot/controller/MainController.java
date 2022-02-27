@@ -41,4 +41,16 @@ public class MainController {
     public String searchResult(){
         return "searchResult";
     }
+    @RequestMapping("/review")
+    public String review(){
+        return "review";
+    }
+    @RequestMapping("/myPage")
+    public String myPage(){
+        return "myPage";
+    }
+    @RequestMapping("/editInfo")
+    public String editInfo(){
+        return "editInfo";
+    }
 }
