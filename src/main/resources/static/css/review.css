@@ -1,0 +1,135 @@
+div.reviewWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*padding-top: 50px;*/
+    /*padding-bottom: 50px;*/
+
+    gap: 30px;
+}
+div.bookInfo{
+    width: 600px;
+    padding: 20px;
+    display: flex;
+    background-color: antiquewhite;
+    gap: 20px;
+}
+img.thumbnail{
+    width: 120px;
+    height: 170px;
+    border: solid 1px;
+}
+div.info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+div.txt, div.contentsTxt{
+    max-width: calc(600px - 120px - 20px);
+    overflow: visible;
+    /* text-overflow: ellipsis; */
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+span.title{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+span.authors, span.publisher, span.date{
+    font-size: 0.8em;
+}
+div.contentsTxt{
+    padding-top: 10px;
+}
+div.comment{
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+div.inputArea{
+    display: flex;
+    gap: 10px;
+}
+span.commentTitle{
+    line-height: 30px;
+    padding-left: 10px;
+    background-color: darkolivegreen;
+    color: white;
+    font-weight: lighter;
+}
+textarea#comment{
+    resize: none;
+    border: solid 1px gray;
+    width: 560px;
+}
+input.saveBtn{
+    background-color: darkolivegreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+}
+span.alertTxt{
+    padding-left: 10px;
+    line-height: 40px;
+}
+
+div.reviewArea{
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+
+    gap: 10px;
+}
+span.reviewTitle{
+    line-height: 30px;
+    padding-left: 10px;
+    background-color: darkolivegreen;
+    color: white;
+    font-weight: lighter;
+}
+div.reviews{
+    display: flex;
+    flex-direction: column;
+
+    gap:10px;
+}
+table.review{
+    width: 100%;
+    min-height: 100px;
+    border: solid 1px gray;
+    word-break: break-all;
+}
+td.id{
+    width: 100px;
+    border-right: solid 1px gray;
+}
+span.id{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+td.reviewTxt{
+    padding: 5px;
+}
+td.info{
+    padding-left: 5px;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+span.date{
+    font-size: 0.8em;
+}
+button.modifyBtn, button.deleteBtn{
+    width: 40px;
+    height: 20px;
+    font-size: 0.6em;
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+}

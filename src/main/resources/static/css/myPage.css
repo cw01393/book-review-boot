@@ -1,0 +1,57 @@
+div.myPageWrap{
+    width: 100%;
+    /*padding-top: 50px;*/
+    /*padding-bottom: 100px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+span.myPageTitle{
+    line-height: 150px;
+    font-size: 2em;
+    font-weight: bold;
+}
+div.myPage{
+    width: 600px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+            "profile editInfo"
+            "profile myReview"
+;
+    gap: 10px;
+}
+div.profile{
+    grid-area: profile;
+    border: solid 1px lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img.profilePic{
+    width: 150px;
+}
+span.id{
+    line-height: 50px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+button.editInfo{
+    grid-area: editInfo;
+    background-color: lightgoldenrodyellow;
+    border: solid 1px lightgray;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+button.myReview{
+    grid-area: myReview;
+    background-color: darkolivegreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3em;
+}
